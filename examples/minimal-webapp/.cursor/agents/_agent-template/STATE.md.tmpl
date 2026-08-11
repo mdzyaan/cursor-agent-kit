@@ -1,0 +1,88 @@
+# {{AGENT_NAME}} agent — state
+
+> Institutional memory for this agent. Schema: [STATE_PROTOCOL.md](../STATE_PROTOCOL.md).  
+> **Hot** sections (overwrite each session) · **Cold** sections (append; Master compacts weekly).
+
+---
+
+## Brain snapshot (hot)
+
+> 3–5 bullets. If you read nothing else, know this. Overwrite every session.
+
+- New agent — customize ownership and facts for TaskBoard
+- Owns: `{{OWNS}}`
+- Decision prefix: `{{DECISION_PREFIX}}`
+
+## Current focus (hot)
+
+- Bootstrap {{AGENT_NAME}} for TaskBoard
+
+## Active handoff (hot)
+
+| Field | Value |
+|-------|-------|
+| From | — |
+| To | — |
+| Goal | — |
+| Status | none |
+| Related decision IDs | — |
+
+## Blockers (hot)
+
+- None
+
+---
+
+## Facts registry (cold)
+
+> Stable truths — ports, env patterns, canonical paths. Append when new; update inline if value changes.
+
+| Fact | Value |
+|------|-------|
+| Project | TaskBoard |
+| Owns | {{OWNS}} |
+
+---
+
+## Decision log (cold)
+
+> Append-only. Never delete — mark `superseded` and link forward.  
+> ID prefix: `{{DECISION_PREFIX}}`
+
+---
+
+## Cross-agent pointers (cold)
+
+> Active decisions owned by other agents that affect this agent's work. Cite ID — do not re-ask.
+
+| ID | Agent | Summary |
+|----|-------|---------|
+| — | — | — |
+
+---
+
+## Open loops (cold)
+
+> Checkbox items. Close with date in session log when resolved.
+
+- [ ] ({{AGENT_ID}}, YYYY-MM-DD) Customize ROLE.md for this project's stack
+
+---
+
+## Session log (cold)
+
+> Last 10 entries (newest first). Master trims beyond 10.
+
+| Date | Summary |
+|------|---------|
+| YYYY-MM-DD | Agent scaffolded via cursor-agent-kit |
+
+---
+
+## Handoff history (cold)
+
+> Last 5 completed handoffs (newest first). Master trims beyond 5.
+
+| Date | From → To | Brief | Status |
+|------|-----------|-------|--------|
+| — | — | — | — |

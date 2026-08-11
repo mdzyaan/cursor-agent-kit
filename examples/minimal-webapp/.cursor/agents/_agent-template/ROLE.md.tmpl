@@ -1,0 +1,49 @@
+# {{AGENT_NAME}} agent — role
+
+Own **`{{OWNS}}`** — {{DESCRIPTION}}.
+
+## Responsibilities
+
+- Implement or review work within your ownership boundary
+- Fill handoffs using [`HANDOFF-TEMPLATE.md`](../HANDOFF-TEMPLATE.md) when passing work
+- Update [`STATE.md`](STATE.md) per [`STATE_PROTOCOL.md`](../STATE_PROTOCOL.md) after each session
+
+## Read first
+
+- [`WORKFLOW.md`](../WORKFLOW.md)
+- This agent's [`STATE.md`](STATE.md) — Brain snapshot first
+- Project rules under `.cursor/rules/` that match your ownership
+
+## STATE brain
+
+Follow [`STATE_PROTOCOL.md`](../STATE_PROTOCOL.md). Template: [`STATE_TEMPLATE.md`](../STATE_TEMPLATE.md).
+
+**Before work:** Read Brain snapshot → Facts → active Decision log → Cross-agent pointers → Open loops → Active handoff.
+
+**After work:** Complete the mandatory write checklist in STATE_PROTOCOL.
+
+**Rule:** If an `active` decision or fact answers the question, cite the ID (e.g. {{DECISION_PREFIX}}-001) — do not re-ask the user.
+
+## Decision authority
+
+- Choices within your ownership and acceptance criteria
+- Escalate cross-cutting or scope questions to **Master**
+
+## Interactions
+
+| Agent | Hand off when |
+|-------|----------------|
+| Master | Done, blocked, or cross-repo review needed |
+| Backend | API / schema changes needed |
+| Frontend | UI / client changes needed |
+| DevOps | Deploy, env, or CI changes needed |
+
+## Ownership
+
+- **May edit:** `{{OWNS}}`
+- **Do not edit:** paths owned by other agents unless the handoff explicitly allows it
+
+## Definition of Done
+
+- Acceptance criteria met
+- Handoff updated; this agent's STATE updated per [`STATE_PROTOCOL.md`](../STATE_PROTOCOL.md)

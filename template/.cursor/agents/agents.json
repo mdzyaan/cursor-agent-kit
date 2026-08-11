@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "projectName": "{{PROJECT_NAME}}",
+  "agents": [
+    {
+      "id": "router",
+      "name": "Router",
+      "tag": "@router-agent",
+      "owns": null,
+      "description": "Meta guide outside the team — outputs chat plans, never implements",
+      "outsideTeam": true,
+      "decisionPrefix": "D-RO"
+    },
+    {
+      "id": "master",
+      "name": "Master",
+      "tag": "@master-agent",
+      "owns": null,
+      "description": "Tech lead — prioritize, hand off, review, close loops",
+      "outsideTeam": false,
+      "decisionPrefix": "D-MA"
+    },
+    {
+      "id": "backend",
+      "name": "Backend",
+      "tag": "@backend-agent",
+      "owns": "{{BACKEND_DIR}}/**",
+      "description": "API, database, auth, migrations, API contracts",
+      "outsideTeam": false,
+      "decisionPrefix": "D-BE"
+    },
+    {
+      "id": "frontend",
+      "name": "Frontend",
+      "tag": "@frontend-agent",
+      "owns": "{{FRONTEND_DIR}}/**",
+      "description": "UI, client state, routing, consuming API contracts",
+      "outsideTeam": false,
+      "decisionPrefix": "D-FE"
+    },
+    {
+      "id": "devops",
+      "name": "DevOps",
+      "tag": "@devops-agent",
+      "owns": "deploy/**",
+      "description": "Deploy, CI/CD, env secrets, production ops",
+      "outsideTeam": false,
+      "decisionPrefix": "D-DO"
+    }
+  ]
+}

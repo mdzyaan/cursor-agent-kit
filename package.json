@@ -1,0 +1,42 @@
+{
+  "name": "cursor-agent-kit",
+  "version": "0.1.0",
+  "description": "Multi-agent orchestration for Cursor IDE — Router, specialist agents, STATE memory protocol, and npx bootstrap.",
+  "keywords": [
+    "cursor",
+    "ai-agents",
+    "developer-tools",
+    "prompt-engineering",
+    "cursor-rules",
+    "multi-agent",
+    "orchestration"
+  ],
+  "homepage": "https://github.com/YOUR_USERNAME/cursor-agent-kit#readme",
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/cursor-agent-kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_USERNAME/cursor-agent-kit.git"
+  },
+  "license": "MIT",
+  "author": "cursor-agent-kit contributors",
+  "type": "commonjs",
+  "bin": {
+    "cursor-agent-kit": "bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "template",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node bin/cli.js",
+    "test:local": "node bin/cli.js --help"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

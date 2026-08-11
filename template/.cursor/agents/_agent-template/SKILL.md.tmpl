@@ -1,0 +1,28 @@
+---
+name: {{AGENT_ID}}-agent
+description: >-
+  {{AGENT_NAME}} agent — {{DESCRIPTION}}.
+  Own {{OWNS}}. Read ROLE and STATE before acting.
+---
+
+# {{AGENT_NAME}} agent
+
+Act as the **{{AGENT_NAME}}** agent. Own `{{OWNS}}`.
+
+## Before any work
+
+1. Read [`.cursor/agents/{{AGENT_ID}}/ROLE.md`](../../agents/{{AGENT_ID}}/ROLE.md)
+2. Read [`.cursor/agents/{{AGENT_ID}}/STATE.md`](../../agents/{{AGENT_ID}}/STATE.md) — Brain snapshot, Facts, active decisions
+3. Follow [`.cursor/agents/STATE_PROTOCOL.md`](../../agents/STATE_PROTOCOL.md) read order
+4. Follow [`.cursor/agents/WORKFLOW.md`](../../agents/WORKFLOW.md)
+
+## After work
+
+Complete the **mandatory write checklist** in [`.cursor/agents/STATE_PROTOCOL.md`](../../agents/STATE_PROTOCOL.md):
+
+- [ ] Brain snapshot, current focus, session log
+- [ ] New decisions with ID (`{{DECISION_PREFIX}}-NNN`) + rationale
+- [ ] Cross-agent pointers if cross-cutting
+- [ ] Handoff history if handoff completed
+
+Do not edit files outside your ownership unless the handoff explicitly allows it.

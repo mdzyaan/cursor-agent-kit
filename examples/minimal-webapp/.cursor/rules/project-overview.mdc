@@ -1,0 +1,33 @@
+---
+description: Short always-on project overview for TaskBoard
+alwaysApply: true
+---
+
+# TaskBoard — project overview
+
+Keep this file under ~200 words. Rename to `project-overview.mdc` after editing.
+
+## Layout
+
+- **`backend/`** — API / backend
+- **`frontend/`** — client / frontend
+
+## Agent team
+
+Open the workspace at the monorepo root so `.cursor/rules/` and `.cursor/skills/` apply.
+
+- Start unclear tasks with `@router-agent`
+- Specialists: `@master-agent`, `@backend-agent`, `@frontend-agent`, `@devops-agent`
+- Each agent reads its `ROLE.md` + `STATE.md` (Brain snapshot first)
+
+## URLs
+
+- Prod: `https://api.taskboard.example`
+- Health: `https://api.taskboard.example/health`
+- Local API: `http://localhost:4000`
+
+## Invariants (examples — replace with yours)
+
+- Do not invent product scoring / pricing numbers — cite the product spec
+- Child/parent (or other domain) rules belong in a dedicated product rule, not here
+- Never commit secrets (`.env`, keys, tokens)

@@ -1,0 +1,10 @@
+examples/
+docs/
+ARCHITECTURE.md
+.git/
+.gitignore
+*.md
+!README.md
+!LICENSE
+.DS_Store
+node_modules/

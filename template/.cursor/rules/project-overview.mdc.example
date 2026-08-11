@@ -1,0 +1,33 @@
+---
+description: Short always-on project overview for {{PROJECT_NAME}}
+alwaysApply: true
+---
+
+# {{PROJECT_NAME}} — project overview
+
+Keep this file under ~200 words. Rename to `project-overview.mdc` after editing.
+
+## Layout
+
+- **`{{BACKEND_DIR}}/`** — API / backend
+- **`{{FRONTEND_DIR}}/`** — client / frontend
+
+## Agent team
+
+Open the workspace at the monorepo root so `.cursor/rules/` and `.cursor/skills/` apply.
+
+- Start unclear tasks with `@router-agent`
+- Specialists: `@master-agent`, `@backend-agent`, `@frontend-agent`, `@devops-agent`
+- Each agent reads its `ROLE.md` + `STATE.md` (Brain snapshot first)
+
+## URLs
+
+- Prod: `{{PROD_URL}}`
+- Health: `{{HEALTH_URL}}`
+- Local API: `http://localhost:{{LOCAL_PORT}}`
+
+## Invariants (examples — replace with yours)
+
+- Do not invent product scoring / pricing numbers — cite the product spec
+- Child/parent (or other domain) rules belong in a dedicated product rule, not here
+- Never commit secrets (`.env`, keys, tokens)
