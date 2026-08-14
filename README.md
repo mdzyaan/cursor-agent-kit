@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/banner.png" alt="Cursor Agent Kit" width="480" />
+  <img src="https://raw.githubusercontent.com/mdzyaan/cursor-agent-kit/main/assets/banner.png" alt="Cursor Agent Kit" width="480" />
 </p>
 
 # cursor-agent-kit
@@ -7,11 +7,24 @@
 [![npm version](https://img.shields.io/npm/v/cursor-agent-kit.svg)](https://www.npmjs.com/package/cursor-agent-kit)
 [![license](https://img.shields.io/npm/l/cursor-agent-kit.svg)](./LICENSE)
 
-**Multi-agent orchestration for [Cursor](https://cursor.com) IDE** — a Router that tells you which chat to open, specialist agents with ownership boundaries, and a STATE protocol for institutional memory (decision IDs, handoffs, weekly compaction).
+Open-source **multi-agent orchestration for [Cursor](https://cursor.com) IDE** — a Router that tells you which chat to open, specialist agents with ownership boundaries, and a STATE protocol for institutional memory (decision IDs, handoffs, weekly compaction).
+
+## Install
+
+This is a CLI, not a library. Run it in your project root:
 
 ```bash
 npx cursor-agent-kit init
 ```
+
+Or install globally:
+
+```bash
+npm install -g cursor-agent-kit
+cursor-agent-kit init
+```
+
+Requires Node.js 18+. MIT licensed.
 
 ## Problem
 

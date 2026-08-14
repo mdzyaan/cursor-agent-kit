@@ -1,15 +1,20 @@
 {
   "name": "cursor-agent-kit",
-  "version": "0.1.0",
-  "description": "Multi-agent orchestration for Cursor IDE — Router, specialist agents, STATE memory protocol, and npx bootstrap.",
+  "version": "0.1.1",
+  "description": "Open-source CLI for Cursor IDE multi-agent orchestration — Router, specialist agents, STATE memory. npx cursor-agent-kit init",
   "keywords": [
     "cursor",
+    "cursor-ide",
+    "cursor-ai",
+    "npx",
+    "cli",
     "ai-agents",
+    "multi-agent",
+    "orchestration",
+    "cursor-rules",
     "developer-tools",
     "prompt-engineering",
-    "cursor-rules",
-    "multi-agent",
-    "orchestration"
+    "open-source"
   ],
   "homepage": "https://github.com/mdzyaan/cursor-agent-kit#readme",
   "bugs": {
