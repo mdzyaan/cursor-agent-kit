@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/banner.png" alt="Cursor Agent Kit" width="480" />
+</p>
+
 # cursor-agent-kit
 
 [![npm version](https://img.shields.io/npm/v/cursor-agent-kit.svg)](https://www.npmjs.com/package/cursor-agent-kit)
