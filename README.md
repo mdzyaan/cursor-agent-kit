@@ -5,6 +5,7 @@
 # cursor-agent-kit
 
 [![npm version](https://img.shields.io/npm/v/cursor-agent-kit.svg)](https://www.npmjs.com/package/cursor-agent-kit)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/cursor-agent-kit)](https://bundlephobia.com/package/cursor-agent-kit)
 [![license](https://img.shields.io/npm/l/cursor-agent-kit.svg)](./LICENSE)
 
 Open-source **multi-agent orchestration for [Cursor](https://cursor.com) IDE** — a Router that tells you which chat to open, specialist agents with ownership boundaries, and a STATE protocol for institutional memory (decision IDs, handoffs, weekly compaction).
